@@ -68,6 +68,8 @@ body {
 }
 
 .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 95%;
     background-color: white;
     padding: 2rem;
