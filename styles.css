@@ -12,8 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
-    width: 100%;
+    min-height: 100vh;
 }
 
 .header {
@@ -120,5 +119,19 @@ body {
     color: #dc3545;
     padding: 2rem;
     font-size: 1.2rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
