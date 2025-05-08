@@ -12,6 +12,11 @@ function searchCountry() {
             data.forEach(country => {
                 const countryCard = document.createElement('div');
                 countryCard.className = 'country-card';
+                
+                // Format currency information
+                const currencies = country.currencies ? 
+                    Object.keys(country.currencies).join(', ') : 'N/A';
+
                 countryCard.innerHTML = `
                     <img src="${country.flags.png}" alt="${country.flags.alt || 'Country flag'}">
                     <h3>${country.name.common}</h3>
@@ -19,6 +24,7 @@ function searchCountry() {
                     <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
                     <p><strong>Region:</strong> ${country.region}</p>
                     <p><strong>Languages:</strong> ${Object.values(country.languages || {}).join(', ') || 'N/A'}</p>
+                    <p><strong>Currency:</strong> ${currencies}</p>
                 `;
                 content.appendChild(countryCard);
             });
