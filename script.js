@@ -25,6 +25,8 @@ function searchCountry() {
                     <p><strong>Region:</strong> ${country.region}</p>
                     <p><strong>Languages:</strong> ${Object.values(country.languages || {}).join(', ') || 'N/A'}</p>
                     <p><strong>Currency:</strong> ${currencies}</p>
+                    <p><strong>Independent:</strong> ${country.independent ? 'Yes' : 'No'}</p>
+                    <p><strong>Status:</strong> ${country.status || 'N/A'}</p>
                 `;
                 content.appendChild(countryCard);
             });
