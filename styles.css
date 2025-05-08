@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-.nav-bar {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +28,7 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.nav-bar span {
+.header span {
     font-size: 1.5rem;
     font-weight: bold;
 }
