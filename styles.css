@@ -83,11 +83,16 @@ body {
 .country-card {
     background: white;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     border: 1px solid #818181;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.country-card h3 {
+    text-align: center;
 }
 
 .country-card:hover {
